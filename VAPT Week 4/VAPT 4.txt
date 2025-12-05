@@ -1,0 +1,89 @@
+1. Advanced Exploitation Lab
+Activities:
+Tools: Metasploit, Python, Ghidra.
+Tasks: Chain exploits, develop custom PoCs, bypass defenses.
+Enhanced Tasks:
+Exploit Chain: Simulate a multi-stage attack on a VulnHub VM (e.g., Mr. Robot) using Metasploit (e.g., use exploit/multi/http/wordpress_plugin_rce). Log:
+Exploit ID | Description             | Target IP      | Status  | Payload
+-----------|------------------------|----------------|---------|-----------
+007        | XSS to RCE Chain       | 192.168.1.100  | Success | Meterpreter
+Custom PoC: Modify a Python PoC from Exploit-DB for a buffer overflow. Summarize in 50 words.
+Bypass: Use ROP to evade ASLR in a local binary. Document in 50 words.
+Report: Draft in Google Docs:
+Title: Critical WordPress Exploit Chain
+Findings: [CVE-2023-12345], [Host: 192.168.1.100]
+Remediation: Update plugins, enable WAF
+2. API Security Testing Lab
+Activities:
+Tools: Burp Suite, Postman, sqlmap.
+Tasks: Test APIs, exploit vulnerabilities, document findings.
+Enhanced Tasks:
+Test Setup: Test a DVWA API for OWASP API Top 10 issues. Log:
+Test ID | Vulnerability         | Severity | Target Endpoint
+--------|----------------------|----------|----------------
+008     | BOLA                 | Critical | /api/users
+009     | GraphQL Injection    | High     | /graphql
+Manual Testing: Use Burp Suite to manipulate API tokens for unauthorized access.
+Checklist: Create in Google Docs:
+Enumerate API endpoints
+Test for BOLA (Burp Suite)
+Fuzz GraphQL queries (Postman)
+Summary: Write a 50-word API test summary.
+3. Privilege Escalation and Persistence Lab
+Activities:
+Tools: Meterpreter, LinPEAS, PowerSploit.
+Tasks: Escalate privileges, establish persistence, document steps.
+Enhanced Tasks:
+Escalation: Use LinPEAS to identify SUID vulnerabilities on a VulnHub VM. Log:
+Task ID | Technique            | Target IP      | Status  | Outcome
+--------|---------------------|----------------|---------|-----------
+010     | SUID Exploit        | 192.168.1.150  | Success | Root Shell
+Persistence: Create a cron job for persistence. Summarize in 50 words.
+Checklist: Create in Google Docs:
+Run LinPEAS for enumeration
+Exploit kernel vulnerabilities
+Set up persistence (cron/service)
+4. Network Protocol Attacks Lab
+Activities:
+Tools: Responder, Ettercap, Wireshark.
+Tasks: Perform MitM attacks, exploit protocols, document findings.
+Enhanced Tasks:
+Attack Simulation: Execute an SMB relay attack using Responder on a TryHackMe VM. Log:
+Attack ID | Technique          | Target IP      | Status  | Outcome
+----------|-------------------|----------------|---------|-----------
+015       | SMB Relay         | 192.168.1.200  | Success | NTLM Hash
+MitM: Use Ettercap for ARP spoofing to intercept traffic. Summarize in 50 words.
+Checklist: Create in Google Docs:
+Capture NTLM hashes (Responder)
+Spoof DNS (Ettercap)
+Analyze traffic (Wireshark)
+5. Mobile Application Testing Lab
+Activities:
+Tools: MobSF, Frida, Drozer.
+Tasks: Analyze APKs, exploit vulnerabilities, document findings.
+Enhanced Tasks:
+Static Analysis: Use MobSF to analyze an Android APK for insecure storage. Log:
+Test ID | Vulnerability         | Severity | Target App
+--------|----------------------|----------|----------------
+016     | Insecure Storage     | High     | test.apk
+Dynamic Testing: Use Frida to hook app functions and bypass authentication. Summarize in 50 words.
+Checklist: Create in Google Docs:
+Run MobSF for static analysis
+Hook functions with Frida
+Test IPC with Drozer
+6. Capstone Project: Full VAPT Engagement
+Activities:
+Tools: Kali Linux, Metasploit, OpenVAS, Burp Suite, Google Docs.
+Tasks: Simulate a full pentest, exploit, report, remediate.
+Enhanced Tasks:
+Simulation: Conduct a pentest on a HackTheBox VM (e.g., Lame) with Metasploit (use exploit/unix/ftp/vsftpd_234_backdoor) and Burp Suite for API tests. Log:
+Timestamp            | Target IP      | Vulnerability | PTES Phase
+--------------------|----------------|---------------|--------------
+2025-08-30 15:00:00 | 192.168.1.200  | VSFTPD RCE    | Exploitation
+Remediation: Recommend patches, input validation, and least privilege. Rescan with OpenVAS.
+Reporting: Write a 300-word PTES report in Google Docs:
+Executive Summary
+Attack Timeline
+Remediation Plan
+Briefing: Draft a 150-word non-technical summary for stakeholders.
+Deadline: December 5- 5:30 PM
